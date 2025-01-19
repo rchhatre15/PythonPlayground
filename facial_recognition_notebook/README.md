@@ -30,15 +30,7 @@ A Jupyter notebook implementation of facial recognition using Python, OpenCV, an
 - Recognition in reduced dimension space
 
 ## Setup
-1. Install dependencies:
-   ```bash
-   pip install opencv-python dlib face_recognition numpy jupyter matplotlib scikit-learn
-   ```
-2. Launch Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-3. Open the facial recognition notebook
+Open the [Facial Recognition Notebook](facial_recognition.ipynb) in Jupyter to begin your analysis.
 
 ## Implementation Details
 - Pre-trained models for face detection

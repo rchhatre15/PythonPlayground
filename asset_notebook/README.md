@@ -35,15 +35,7 @@ A Jupyter notebook for financial asset analysis, featuring data visualization, s
    - Correlation analysis
 
 ## Setup
-1. Install requirements:
-   ```bash
-   pip install pandas numpy matplotlib seaborn yfinance jupyter scikit-learn
-   ```
-2. Launch Jupyter:
-   ```bash
-   jupyter notebook
-   ```
-3. Open the asset analysis notebook
+Open the [Asset Comparison Notebook](asset_comparison.ipynb) in Jupyter to begin your analysis.
 
 ## Analysis Features
 - Price trend analysis
