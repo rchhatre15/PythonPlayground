@@ -2,10 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import os
+from dotenv import load_dotenv
 
-client_id = "2ff7e91529bc48f5840a03521cd68137"
-client_secret = "0b574d33799642f18e0f78b63c9ec666"
-token = "BQARKI9EcP_IGTXiZ-HpAGheQVKJhNOkUoiVA624fs_fyd3N03gI0U1WdnuzgNPeGKngXbc763af4A6wRXvIcuPGTrZuMjrjCEQlpz1Woz3gGkqgJC64GNsyMYWkcCKHQXkS5K8blt7QMCxHEE3aZz0IR0kzZ7giC7xvbaFurAQUV3pGGEwj_wQlPgmZZS--m7Yu4lBL1ataQIdsDBD05RLg6w"
+load_dotenv()
+
+client_id = os.getenv("client_id")
+client_secret = os.getenv("client_secret")
+token = os.getenv("token")
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
@@ -52,4 +56,3 @@ for song in song_names:
 # print(URI_list)
 playlist = sp.user_playlist_create(user=user_id, name=f"{time} Billboard 100", public=False)
 sp.user_playlist_add_tracks(user=user_id, playlist_id=playlist["id"], tracks=URI_list)
-

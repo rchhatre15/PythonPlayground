@@ -1,0 +1,7 @@
+initialize,4
+insert,42,ZGHYUVUJAL,0
+insert,34,OIOZUHZZVZ,0
+insert,7,GHDJWGYGMS,1
+insert,43,ADGOBVSTTB,2
+delete,43
+dump
