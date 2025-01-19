@@ -30,7 +30,7 @@ A Jupyter notebook implementation of facial recognition using Python, OpenCV, an
 - Recognition in reduced dimension space
 
 ## Setup
-Open the [Facial Recognition Notebook](pca.ipynb) in Jupyter to begin your analysis.
+Open [Facial Recognition Notebook](pca.ipynb) to view the notebook.
 
 ## Implementation Details
 - Pre-trained models for face detection

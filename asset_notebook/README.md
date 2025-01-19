@@ -35,7 +35,7 @@ A Jupyter notebook for financial asset analysis, featuring data visualization, s
    - Correlation analysis
 
 ## Setup
-Open the [Asset Comparison Notebook](asset_comparison.ipynb) in Jupyter to begin your analysis.
+Open the [Asset Comparison Notebook](asset_comparison.ipynb) to view the notebook.
 
 ## Analysis Features
 - Price trend analysis
