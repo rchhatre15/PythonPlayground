@@ -14,9 +14,9 @@ A dynamic web application for ranking and reviewing movies, built with Flask and
 
 ## Technologies Used
 - Python/Flask
-- SQLAlchemy
-- WTForms
 - HTML/CSS
+- WTForms
+- SQLAlchemy
 - SQLite database
 
 ## Project Structure
@@ -33,21 +33,18 @@ movie_ranking_website/
 └── movie.db
 ```
 
-## Setup
+## Setup & Usage
 1. Install dependencies:
    ```bash
    pip install flask flask-sqlalchemy flask-wtf
    ```
 2. Initialize the database
-3. Run the Flask application
-
-## Usage
-1. Start the server:
+3. Start the server:
    ```bash
    python main.py
    ```
-2. Access at `http://localhost:5000`
-3. Add movies, rate them, and write reviews
+4. Access at `http://localhost:5000`
+5. Add movies, rate them, and write reviews
 
 ## Database Schema
 - Movie title
