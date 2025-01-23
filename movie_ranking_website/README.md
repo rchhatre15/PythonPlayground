@@ -47,9 +47,10 @@ movie_ranking_website/
 5. Add movies, rate them, and write reviews
 
 ## Database Schema
-- Movie title
+- Title
 - Year
 - Description
 - Rating
+- Ranking
 - Review
-- Image URL
+- Image
