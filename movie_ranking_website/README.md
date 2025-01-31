@@ -27,6 +27,8 @@ A Flask-based web application that allows users to create and manage their perso
 ## Project Structure
 ```
 movie_ranking_website/
+├── instance/
+│   ├── movies.db
 ├── static/
 │   ├── css/
 │   └── images/
@@ -35,8 +37,7 @@ movie_ranking_website/
 │   ├── add.html
 │   └── edit.html
 ├── main.py
-└── movie.db
-```
+├── requirements.txt```
 
 ## Setup & Usage
 1. Install dependencies:
