@@ -5,9 +5,28 @@
 {% block content %}
 <div class="container">
     <h1 class="heading">Select Movie</h1>
-  <p>
-    <a href="#"> MOVIE TITLE - MOVIE RELEASE DATE</a>
-  </p>
-
+    {% for movie in movies %}
+    <p>
+        <form method="POST" style="display: inline;">
+            <input type="hidden" name="movie_id" value="{{ movie[0] }}">
+            <button type="submit" class="link-button">{{ movie[1] }} - {{ movie[2] }}</button>
+        </form>
+    </p>
+    {% endfor %}
 </div>
+
+<style>
+.link-button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+}
+.link-button:hover {
+    color: #003366;
+}
+</style>
 {% endblock %}
