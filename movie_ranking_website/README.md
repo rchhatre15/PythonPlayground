@@ -37,7 +37,7 @@ movie_ranking_website/
 │   ├── add.html
 │   └── edit.html
 ├── main.py
-├── requirements.txt```
+├── requirements.txt
 
 ## Setup & Usage
 1. Install dependencies:
