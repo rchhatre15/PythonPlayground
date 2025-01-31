@@ -34,7 +34,6 @@ class Movie(db.Model):
     year: Mapped[int] = mapped_column(Integer, nullable=False)
     description: Mapped[str] = mapped_column(Text, nullable=False)
     rating: Mapped[float] = mapped_column(Float, nullable=True)
-    ranking: Mapped[int] = mapped_column(Integer, nullable=True)
     review: Mapped[str] = mapped_column(Text, nullable=True)
     img_url: Mapped[str] = mapped_column(String(250), nullable=False)
 
@@ -143,7 +142,7 @@ def select(movie_name):
         if response.status_code == 200:
             data = response.json()
             # print(data)
-            db.session.execute(db.insert(Movie).values(id=data["id"], title=data["title"], year=data["release_date"][0:4], description=data["overview"], rating=None, ranking=None, review=None, img_url=f"https://image.tmdb.org/t/p/w500{data['poster_path']}"))
+            db.session.execute(db.insert(Movie).values(id=data["id"], title=data["title"], year=data["release_date"][0:4], description=data["overview"], rating=None, review=None, img_url=f"https://image.tmdb.org/t/p/w500{data['poster_path']}"))
             db.session.commit()
             return redirect(url_for('edit', movie_id=data["id"]))
         else:

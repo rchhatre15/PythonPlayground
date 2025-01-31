@@ -1,16 +1,17 @@
 # Movie Ranking Website
 
-## Overview
-A dynamic web application for ranking and reviewing movies, built with Flask and SQLAlchemy. Features a clean, responsive interface for adding, rating, and reviewing movies.
+A Flask-based web application that allows users to create and manage their personal movie rankings. The application integrates with The Movie Database (TMDB) API to provide accurate and up-to-date movie information.
 
 ## Features
 - Movie database management
-- Rating system
+- Rating and reviewsystem
 - Movie review functionality
 - Responsive design
-- Search capabilities
-- Sort by rating/title
+- Dynamic sorting by rating
 - Edit and delete functionality
+- Session-based search results management
+- TMDB API Integration for movie search and data
+- Seamless card-based UI with movie posters
 
 ## Technologies Used
 - Python/Flask
@@ -18,6 +19,10 @@ A dynamic web application for ranking and reviewing movies, built with Flask and
 - WTForms
 - SQLAlchemy
 - SQLite database
+- Flask-SQLAlchemy for database ORM
+- Flask-WTF for form handling and CSRF protection
+- SQLite database
+- TMDB API for movie data
 
 ## Project Structure
 ```
@@ -36,7 +41,7 @@ movie_ranking_website/
 ## Setup & Usage
 1. Install dependencies:
    ```bash
-   pip install flask flask-sqlalchemy flask-wtf
+   pip install -r requirements.txt
    ```
 2. Initialize the database
 3. Start the server:
@@ -51,6 +56,5 @@ movie_ranking_website/
 - Year
 - Description
 - Rating
-- Ranking
 - Review
 - Image
